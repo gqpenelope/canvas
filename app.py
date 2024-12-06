@@ -73,7 +73,7 @@ with tab1:
         <script>
         const buttons = document.querySelectorAll('div[role="radiogroup"] > label');
         buttons.forEach((button) => {
-            button.style.color = 'black';
+            button.style.color = 'red';
             button.style.backgroundColor = 'white';
         });
         </script>
