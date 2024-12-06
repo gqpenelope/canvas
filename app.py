@@ -70,6 +70,18 @@ with tab1:
     )
     st.markdown(
         """
+        <script>
+        const buttons = document.querySelectorAll('div[role="radiogroup"] > label');
+        buttons.forEach((button) => {
+            button.style.color = 'black';
+            button.style.backgroundColor = 'white';
+        });
+        </script>
+        """,
+        unsafe_allow_html=True,
+    )
+    st.markdown(
+        """
         <style>
         /* Botones sin seleccionar */
         div[role="radiogroup"] > label {
