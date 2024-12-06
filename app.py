@@ -70,22 +70,10 @@ with tab1:
     )
     st.markdown(
         """
-        <script>
-        const buttons = document.querySelectorAll('div[role="radiogroup"] > label');
-        buttons.forEach((button) => {
-            button.style.color = 'red';
-            button.style.backgroundColor = 'white';
-        });
-        </script>
-        """,
-        unsafe_allow_html=True,
-    )
-    st.markdown(
-        """
         <style>
         /* Botones sin seleccionar */
         div[role="radiogroup"] > label {
-            background-color: white !important;
+            background-color: #F46197 !important;
             color: black !important; /* Texto negro para asegurar contraste */
             border: 2px solid black;
             border-radius: 10px;
@@ -98,9 +86,8 @@ with tab1:
         
         /* Botón seleccionado */
         div[role="radiogroup"] > label[data-selected="true"] {
-            background-color: #FFB703 !important; /* Fondo amarillo */
+            background-color: #F46197 !important;
             color: black !important; /* Texto negro */
-            border: 2px solid #FFB703;
             font-weight: bold;
         }
         
